@@ -1,0 +1,209 @@
+/*la idea es que la colorimetria y la fuente sea parecida en todas las paginas*/
+
+
+/*header y footer siempre igual para reconocimiento del usuario     */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+html, body {
+   display:flex;
+   flex-direction: column;
+   min-height: 100vh;
+   font-family: 'Merriweather', serif;
+   background-color: #F9F9F7;
+   
+}
+
+
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.7rem;
+    background-color: #5F7486;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+
+
+
+}
+
+
+
+.linksCaja {
+    /* ancho de la ul para que tenga espacio en la alineacion de las cajas dentro de la ul*/
+    width: 40em;
+    height: 10%;
+    /* abrimos flex para que esto funcione como cajas*/
+    display: flex;
+    /*espacio entre cajas dentro de ul*/
+    justify-content: space-between;
+    /*no es necesario meter align items por que la caja que contiene los links, osea "links caja" ya esta en el end por el display del header que es el padre*/
+    flex-direction: row; /* quiero que los links esten en fila*/
+    /* background-color: blue; /*puse un color cualquiera para identificar*/
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+
+footer {
+    
+    background-color: #5F7486;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+    color: rgb(1, 1, 71);
+    text-align: center;
+    font-size: 0.8rem;
+    
+    width: 100%;
+     
+}
+
+.footer-caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer img {
+    width: 5em;
+    height: 5em;
+}
+    
+
+main {
+    flex-grow: 1;
+    background-color: #F9F9F7;
+    /*background-image: url('../img/fondoarg.jpg');*/
+    color: rgb(1, 1, 71);
+    text-align: center;
+    
+   
+}
+
+.MainGridIndex {
+    display: grid;
+    /*dibujar la grilla o el plano*/
+    grid-template-areas:
+    "img titulo" 
+    "img subtitulo"
+    "img p1";
+
+
+    /*cantidad y ancho de columnas*/
+    grid-template-columns: 50% 50%;
+
+
+    /*cantidad y alto de filas*/
+    grid-template-rows: 20% 30% 50%;
+
+    /*alinear las filas y columnas asi el espacio queda afuera*/
+    justify-content: center;
+    /*alinear contenido*/
+    justify-items: center;
+
+    /*espacios entre filas y columnas*/
+    column-gap: 5px;
+    row-gap: 5px;
+
+
+}
+
+.fotoGrid {
+    grid-area: img;
+    width: 100%;
+    height: auto;
+}
+
+.titGrid{
+    grid-area: titulo;
+    width: 100%;
+    height: auto;
+}
+
+.subGrid {
+    grid-area: subtitulo;
+    padding-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.p1Grid {
+    grid-area: p1;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.credencial {
+    height: 30px;
+    width: 50px;
+}
+
+.noticia1 {
+    height: 200px;
+    width: 300px;
+}
+
+.convenio {
+    height: 4rem;
+    width: 4rem;
+    padding: 0.5rem;
+}
+
+
+/*media queries*/
+
+/*mobile*/
+
+@media (max-width: 480px) {
+    
+   
+    
+    header {
+        flex-direction: column;
+        
+    }
+
+    header h1 {
+        margin-top: 10px;
+    }
+  
+
+    .linksCaja {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .MainGridIndex {
+        grid-template-areas:
+        "img"
+        "titulo"
+        "subtitulo"
+        "p1";
+
+        grid-template-columns: 100%;
+
+        grid-template-rows: auto;
+    }
+}
