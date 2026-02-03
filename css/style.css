@@ -43,6 +43,13 @@ header {
 
 }
 
+.clase-propia a {
+    
+    background-color: #5F7486;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+
 
 
 .linksCaja {
@@ -126,6 +133,10 @@ main {
 
 }
 
+main section {
+    padding-bottom: 2%;
+}
+
 .fotoGrid {
     grid-area: img;
     width: 100%;
@@ -167,6 +178,11 @@ main {
     height: 4rem;
     width: 4rem;
     padding: 0.5rem;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 
