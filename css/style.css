@@ -185,6 +185,24 @@ iframe {
     height: auto;
 }
 
+.caja-creden {
+    border: 2px solid #5F7486;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+}
+.credenciales-cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+}
 
 /*media queries*/
 
@@ -221,5 +239,10 @@ iframe {
         grid-template-columns: 100%;
 
         grid-template-rows: auto;
+    }
+
+    .credenciales-cajas {
+        flex-direction: column;
+        align-items: center;
     }
 }
