@@ -1,0 +1,56 @@
+
+
+@use "./_variables.scss" as *;
+
+/* ================= HEADER ================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.7rem;
+  background-color: $color-principal;
+  box-shadow: $sombra-header;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.clase-propia {
+  a {
+    background-color: $color-principal;
+    box-shadow: $sombra-header;
+  }
+}
+
+.linksCaja {
+  @include flexbox(row, space-between, center);
+  width: 40em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background-color: $color-principal;
+  box-shadow: $sombra-header;
+  color: $color-texto;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+
+  .footer-caja {
+  @include flexbox(row, space-around, center);
+}
+
+
+  img {
+    width: 5em;
+    height: 5em;
+  }
+}

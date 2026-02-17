@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* Reset */
+/* Colores */
+/* Sombras */
+/* Bordes */
+/* Tipografía */
+/* Breakpoints */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Merriweather", serif;
+  background-color: #F9F9F7;
+}
+
+/* Reset */
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.7rem;
+  background-color: #5F7486;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+header img {
+  width: 60px;
+  height: 60px;
+}
+
+.clase-propia a {
+  background-color: #5F7486;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.linksCaja {
+  width: 40em;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3% 0;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #5F7486;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  color: rgb(1, 1, 71);
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+}
+footer .footer-caja {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer img {
+  width: 5em;
+  height: 5em;
+}
+
+/* Reset */
+/* ================= MAIN ================= */
+main {
+  flex-grow: 1;
+  background-color: #F9F9F7;
+  color: rgb(1, 1, 71);
+  text-align: center;
+}
+main section {
+  padding-bottom: 2%;
+}
+
+/* ================= GRID ================= */
+.MainGridIndex {
+  display: grid;
+  grid-template-areas: "img titulo" "img subtitulo" "img p1";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 30% 50%;
+  justify-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+.fotoGrid {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+.titGrid {
+  grid-area: titulo;
+  width: 100%;
+  height: auto;
+}
+
+.subGrid {
+  grid-area: subtitulo;
+  padding-top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.p1Grid {
+  grid-area: p1;
+  width: 100%;
+  height: auto;
+}
+
+/* Reset */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    margin-top: 10px;
+  }
+  .linksCaja {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .MainGridIndex {
+    grid-template-areas: "img" "titulo" "subtitulo" "p1";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .credenciales-cajas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

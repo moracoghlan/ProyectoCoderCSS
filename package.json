@@ -1,0 +1,24 @@
+{
+  "name": "mi-sitio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moracoghlan/ProyectoCoderCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/moracoghlan/ProyectoCoderCSS/issues"
+  },
+  "homepage": "https://github.com/moracoghlan/ProyectoCoderCSS#readme",
+  "dependencies": {
+    "sass": "^1.97.3"
+  }
+}

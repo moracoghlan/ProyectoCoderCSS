@@ -1,0 +1,21 @@
+// comentario sass
+/* Reset */
+
+
+// partial
+
+//_colores.scss
+
+// use "colores.scss";
+
+//use "colores.scss" *as  si importo otro partial
+
+// extend
+
+
+@use "partials/variables";
+@use "partials/_basico.scss";
+@use "partials/_headerFooter.scss";
+@use "pages/index";
+@use "partials/_media.scss";
+

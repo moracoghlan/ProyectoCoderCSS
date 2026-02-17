@@ -1,0 +1,40 @@
+
+/* ================= MAIN ================= */
+
+@use "../partials/variables" as *;
+
+main {
+  flex-grow: 1;
+  background-color: $color-fondo;
+  color: $color-texto;
+  text-align: center;
+
+  section {
+    padding-bottom: 2%;
+  }
+}
+
+/* ================= GRID ================= */
+
+.MainGridIndex {
+  display: grid;
+
+  grid-template-areas:
+    "img titulo"
+    "img subtitulo"
+    "img p1";
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 30% 50%;
+
+  justify-content: center;
+  justify-items: center;
+
+  gap: 5px;
+}
+
+.fotoGrid { grid-area: img; width: 100%; height: auto; }
+.titGrid { grid-area: titulo; width: 100%; height: auto; }
+.subGrid { grid-area: subtitulo; padding-top: 5%; width: 100%; height: auto; }
+.p1Grid { grid-area: p1; width: 100%; height: auto; }
+

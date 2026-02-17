@@ -1,0 +1,36 @@
+@use "./_variables.scss" as *;
+
+
+@media (max-width: $mobile) {
+
+  header {
+    flex-direction: column;
+
+    h1 {
+      margin-top: 10px;
+    }
+  }
+
+  .linksCaja {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .MainGridIndex {
+    grid-template-areas:
+      "img"
+      "titulo"
+      "subtitulo"
+      "p1";
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .credenciales-cajas {
+    flex-direction: column;
+    align-items: center;
+  }
+}

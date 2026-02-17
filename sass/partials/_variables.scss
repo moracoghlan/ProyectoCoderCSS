@@ -1,0 +1,35 @@
+
+
+// ================= VARIABLES ================= //
+
+/* Colores */
+$color-principal: #5F7486;
+$color-fondo: #F9F9F7;
+$color-blanco: #FFFFFF;
+$color-texto: rgb(1, 1, 71);
+
+/* Sombras */
+$sombra-header: 0 1px 0 rgba(0, 0, 0, 0.6);
+$sombra-caja: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+/* Bordes */
+$borde-principal: 2px solid $color-principal;
+
+/* Tipografía */
+$fuente-principal: 'Merriweather', serif;
+
+/* Breakpoints */
+$mobile: 480px;
+
+
+// mixin
+
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+
