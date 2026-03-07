@@ -81,3 +81,29 @@ main {
 .preguntasGrid { grid-area: preguntas; width: 100%; height: auto; }
 
 .iframeGrid { grid-area: iframe; width: 100%; height: auto; }
+
+/* ================= GRID CREDENCIALES ================= */
+
+.GridCredenciales {
+  display: grid;
+
+  grid-template-areas:
+    "foto seccion"
+    "foto2 seccion2";
+
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 20px;
+}
+
+
+.fotoCred1 { grid-area: foto; width: 90%; height: auto; padding:20px; }
+.fotoCred2 { grid-area: foto2; width: 90%; height: auto;padding:20px; }
+.seccionCred1 { grid-area: seccion; width: 100%; height: auto; }
+.seccionCred2 { grid-area: seccion2; width: 100%; height: auto; }
