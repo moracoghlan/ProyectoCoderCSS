@@ -41,12 +41,13 @@ header img {
 }
 
 .linksCaja {
-  width: 40em;
-  height: 10%;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  padding: 3% 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 40em;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 /* ================= FOOTER ================= */
@@ -81,38 +82,81 @@ main section {
   padding-bottom: 2%;
 }
 
+.mainIND {
+  background-image: url("../img/fondoarg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* ================= GRID ================= */
 .MainGridIndex {
   display: grid;
-  grid-template-areas: "img titulo" "img subtitulo" "img p1";
+  grid-template-areas: "img1 titulo" "img2 subtitulo" "img3 p1";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 30% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
-  gap: 5px;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.fotoGrid {
-  grid-area: img;
-  width: 100%;
-  height: auto;
+.fotoGrid1,
+.fotoGrid2,
+.fotoGrid3 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
 }
 
 .titGrid {
   grid-area: titulo;
   width: 100%;
-  height: auto;
 }
 
 .subGrid {
   grid-area: subtitulo;
-  padding-top: 5%;
   width: 100%;
-  height: auto;
 }
 
 .p1Grid {
   grid-area: p1;
+  width: 100%;
+}
+
+/* ================= GRID DONDE ================= */
+.GridDonde {
+  display: grid;
+  grid-template-areas: "seccion preguntas" "iframe iframe" "parrafoDndGrid parrafoDndGrid";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  justify-content: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+.seccionGrid {
+  grid-area: seccion;
+  width: 100%;
+  height: auto;
+}
+
+.parrafoDndGrid {
+  grid-area: parrafoDndGrid;
+  width: 100%;
+  height: auto;
+}
+
+.preguntasGrid {
+  grid-area: preguntas;
+  width: 100%;
+  height: auto;
+}
+
+.iframeGrid {
+  grid-area: iframe;
   width: 100%;
   height: auto;
 }
@@ -124,6 +168,10 @@ main section {
   }
   header h1 {
     margin-top: 10px;
+  }
+  header img {
+    width: 50px;
+    height: 50px;
   }
   .linksCaja {
     width: 100%;
@@ -140,6 +188,31 @@ main section {
     flex-direction: column;
     align-items: center;
   }
+  .caja-creden {
+    width: 100%;
+    height: auto;
+  }
+  .credencial {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .video-convenio {
+    width: 100%;
+    height: auto;
+  }
+  .noticia1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer img {
+    width: 4em;
+    height: 4em;
+  }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=styles.css.map */

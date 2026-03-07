@@ -14,18 +14,59 @@ main {
   }
 }
 
+.mainIND {
+  background-image: url("../img/fondoarg.jpg");
+  background-size: cover;
+  background-position: center;
+}
 /* ================= GRID ================= */
 
 .MainGridIndex {
   display: grid;
 
   grid-template-areas:
-    "img titulo"
-    "img subtitulo"
-    "img p1";
+    "img1 titulo"
+    "img2 subtitulo"
+    "img3 p1";
 
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 30% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 20px;
+}
+
+.fotoGrid1,
+.fotoGrid2,
+.fotoGrid3 {
+  width: 200px;
+  height: 200px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 10px;
+}
+
+.titGrid { grid-area: titulo; width: 100%; }
+.subGrid { grid-area: subtitulo; width: 100%; }
+.p1Grid { grid-area: p1; width: 100%; }
+/* ================= GRID DONDE ================= */
+
+.GridDonde {
+  display: grid;
+
+  grid-template-areas:
+    "seccion preguntas"
+    "iframe iframe"
+    "parrafoDndGrid parrafoDndGrid";
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
 
   justify-content: center;
   justify-items: center;
@@ -33,8 +74,10 @@ main {
   gap: 5px;
 }
 
-.fotoGrid { grid-area: img; width: 100%; height: auto; }
-.titGrid { grid-area: titulo; width: 100%; height: auto; }
-.subGrid { grid-area: subtitulo; padding-top: 5%; width: 100%; height: auto; }
-.p1Grid { grid-area: p1; width: 100%; height: auto; }
+.seccionGrid { grid-area: seccion; width: 100%; height: auto; }
 
+.parrafoDndGrid { grid-area: parrafoDndGrid; width: 100%; height: auto; }
+
+.preguntasGrid { grid-area: preguntas; width: 100%; height: auto; }
+
+.iframeGrid { grid-area: iframe; width: 100%; height: auto; }
