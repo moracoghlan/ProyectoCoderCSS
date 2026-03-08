@@ -1,7 +1,7 @@
 @use "./_variables.scss" as *;
 
 
-@media (max-width: $mobile) {
+@media (min-width: 0px) and (max-width: $mobile) {
 
   header {
     flex-direction: column;
@@ -34,22 +34,7 @@
     grid-template-rows: auto;
   }
 
-  .credenciales-cajas {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .caja-creden  {
-    width: 100%;
-    height: auto;
-}
-
-.credencial {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
+  
 .video-convenio {
     width: 100%;
     height: auto;
@@ -69,3 +54,26 @@ footer {
   }
 
 }
+
+@media (min-width: 481px) and (max-width: $tablet) {
+
+/* no hay muchos cambios para hacer ya que el diseño es bastante flexible, pero se pueden ajustar algunos tamaños */
+
+  header img {
+    width: 55px;
+    height: 55px;
+  }
+
+  
+  .MainGridIndex {
+    grid-template-areas:
+      "img1 titulo"
+      "img2 subtitulo"
+      "img3 p1";
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+
+}
+

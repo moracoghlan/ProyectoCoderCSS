@@ -123,7 +123,7 @@ main section {
 
 .p1Grid {
   grid-area: p1;
-  width: 100%;
+  width: 90%;
 }
 
 /* ================= GRID DONDE ================= */
@@ -201,7 +201,7 @@ main section {
 }
 
 /* Reset */
-@media (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header {
     flex-direction: column;
   }
@@ -223,19 +223,6 @@ main section {
     grid-template-columns: 100%;
     grid-template-rows: auto;
   }
-  .credenciales-cajas {
-    flex-direction: column;
-    align-items: center;
-  }
-  .caja-creden {
-    width: 100%;
-    height: auto;
-  }
-  .credencial {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
   .video-convenio {
     width: 100%;
     height: auto;
@@ -251,6 +238,18 @@ main section {
   footer img {
     width: 4em;
     height: 4em;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* no hay muchos cambios para hacer ya que el diseño es bastante flexible, pero se pueden ajustar algunos tamaños */
+  header img {
+    width: 55px;
+    height: 55px;
+  }
+  .MainGridIndex {
+    grid-template-areas: "img1 titulo" "img2 subtitulo" "img3 p1";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
   }
 }
 
