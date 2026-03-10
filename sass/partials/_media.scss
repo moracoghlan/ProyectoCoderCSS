@@ -24,14 +24,24 @@
   }
 
   .MainGridIndex {
-    grid-template-areas:
-      "img"
-      "titulo"
-      "subtitulo"
-      "p1";
+  grid-template-areas:
+    "img1"
+    "titulo"
+    "img2"
+    "subtitulo"
+    "img3"
+    "p1";
 
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  }
+
+  .fotoGrid1,
+  .fotoGrid2,
+  .fotoGrid3 {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
   }
 
   
