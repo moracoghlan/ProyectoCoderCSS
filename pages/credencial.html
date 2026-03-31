@@ -1,113 +1,156 @@
-<!DOCTYPE html>     
-<html lang="es">        
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credencial - Juzgado de Familia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credencial - Juzgado de Familia</title>
 
-       <!-- Meta Etiquetas -->
-    <meta name="description" content="Credenciales institucionales de ejemplo del equipo del Juzgado de Familia de Lanús. Información ficticia utilizada en un proyecto educativo de desarrollo web.">
-    <meta name="keywords" content="credenciales, juzgado, familia">
+  <meta name="description" content="Credenciales institucionales de ejemplo.">
+  <meta name="keywords" content="credenciales, juzgado, familia">
 
+  <!-- Bootstrap SOLO navbar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+  <!-- fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css">
 
-    <!-- Animate.css -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- CSS propio (SIEMPRE último) -->
-    <link rel="stylesheet" href="../css/styles.css">
+  <!-- js -->
+  <script src="../js/app.js" defer></script>
 </head>
 
-<body>  
+<body>
+    <div class="wrapper">
+        <header>
 
-<header>
-    <img class="inline-element" src="../img/logo-juz.jpeg" alt="Logo del juzgado">
-    <h1 class="animate__animated animate__backInLeft">Credencial Online</h1>
+        <div class="header-top">
+            <img src="../img/logo-juz.jpeg" alt="Logo del juzgado">
+            <h1>Credencial Online</h1>
+        </div>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand clase-propia" href="../index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" aria-controls="navbarNav" 
-                aria-expanded="false" aria-label="Toggle navigation">
+        <!-- NAVBAR IGUAL EN TODAS -->
+        <nav class="navbar navbar-expand-lg navbar-custom container-fluid">
+            <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./donde.html">Donde estamos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./convenios.html">Convenios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./noticias.html">Noticias</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./credencial.html">Credencial</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./donde.html">Dónde estamos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Noticias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./convenios.html">Convenios</a>
+                </li>
+
                 </ul>
             </div>
+
+            </div>
+        </nav>
+
+        </header>
+
+        <main class="main-container">
+
+            <section class="credencial">
+
+                <!-- TEXTO -->
+                <div class="credencial-info">
+                    <h2>Credencial Online</h2>
+
+                    <p>
+                        Complete el siguiente formulario para generar una credencial institucional de ejemplo.
+                    </p>
+
+                    <p>
+                        Esta herramienta permite simular el registro de personas vinculadas a expedientes judiciales, facilitando la organización de la información y la identificación de los intervinientes dentro del sistema.
+                    </p>
+
+                    <p>
+                        El uso de formularios digitales resulta fundamental para optimizar la gestión administrativa, reducir errores en la carga de datos y agilizar los tiempos de atención. Asimismo, permite mantener un registro ordenado y accesible de la información relevante para cada caso.
+                    </p>
+
+                    <p>
+                        Los datos ingresados no tienen validez oficial y se utilizan únicamente con fines educativos.
+                    </p>
+                </div>
+
+                <!-- FORM -->
+                <div class="credencial-formulario">
+
+                    <form id="form">
+
+                        <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                        </div>
+
+                        <div class="campo">
+                        <label for="dni">DNI</label>
+                        <input id="dni" name="dni" type="number" required>
+                        </div>
+
+                        <div class="campo">
+                        <label for="expediente">Número de expediente</label>
+                        <input id="expediente" name="expediente" type="text" required>
+                        </div>
+
+                        <div class="campo">
+                        <label for="edad">Edad</label>
+                        <input id="edad" name="edad" type="number" required>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+
+                    </form>
+
+                </div>
+
+            <section class="credenciales-galeria">
+                <div class="credenciales-track">
+                    <img src="../img/CREDENCIALES.jpg" alt="Credencial institucional de ejemplo">
+                    <img src="../img/CREDENCIALES.jpg" alt="Credencial institucional de ejemplo">
+                    <img src="../img/CREDENCIALES.jpg" alt="Credencial institucional de ejemplo">
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+        <div class="footer-caja">
+            <img src="../img/siluetafam.webp" alt="Imagen representativa con una silueta de familia">
+
+            <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
+
+            <p>
+            Dirección: Av. Invento 3800, Lanús<br>
+            Tel: (011) 4241-0000<br>
+            Email: juzfam@jusbuenosaires.gob.ar<br>
+            Horario: Lunes a Viernes de 8 a 14 hs
+            </p>
         </div>
-    </nav>
-</header>
+        </footer>
 
-<main class="GridCredenciales">
-    <img class="fotoCred1 animate__animated animate__backInLeft" src="../img/abogada.avif" alt="Mujer castaña de ojos claros sonriendo">
-    <section class="seccionCred1">
-        <h2>Credencial 1</h2>
-        <h3>Dra. María Eugenia Fernández</h3>
-        <p>
-        Abogada – Matrícula T° 45 F° 312 C.A.L.Z. 
-        Especialista en Derecho de Familia y Protección de Niñez y Adolescencia. 
-        Egresada de la Universidad Nacional de Lomas de Zamora, con más de 12 años 
-        de experiencia en procesos de alimentos, cuidado personal, régimen de comunicación 
-        y responsabilidad parental. Actualmente se desempeña como funcionaria letrada 
-        en el ámbito del Juzgado de Familia,
-        </p>
-    </section>
-    <img class="fotoCred2 animate__animated animate__backInRight" src="../img/abogado.avif" alt="Hombre de cabello oscuro y barba, sonriendo">
-    <section class="seccionCred2">
-        <h2>Credencial 2</h2>
-        <h3>Dr. Juan Ignacio Romero</h3>
-        <p>
-        Abogado – Matrícula T° 38 F° 221 C.A.L.Z. 
-        Especialista en Derecho Procesal de Familia y Violencia Familiar. 
-        Egresado de la Universidad de Buenos Aires, con trayectoria en mediación, 
-        medidas de protección urgente y procesos de adopción. Integra el equipo técnico 
-        interdisciplinario colaborando en la redacción de dictámenes y seguimiento 
-        de actuaciones judiciales.
-        </p>
-    </section>
-</main>
-
-<footer>
-    <div class="footer-caja">
-        <img src="../img/siluetafam.webp" alt="Silueta genérica de la familia">
-        <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
-        <p>
-        Dirección: Av. invento 3800, Lanús, Provincia de Buenos Aires.<br>
-        Teléfono: (011) 4241-0000<br>
-        Correo electrónico: juzfam@jusbuenosaires.gob.ar<br>
-        Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
-        </p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </div>
-</footer>
-
-<!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
-</script>
-
 </body>
 </html>

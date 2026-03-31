@@ -1,89 +1,102 @@
 @use "./_variables.scss" as *;
+/* ================= MOBILE ================= */
+/* hasta 768px */
+@media (max-width: 768px) {
 
-
-@media (min-width: 0px) and (max-width: $mobile) {
-
-  header {
+  /* ===== NOTICIAS ===== */
+  .noticia {
     flex-direction: column;
-
-    h1 {
-      margin-top: 10px;
-    }
-
-    img {
-      width: 50px;
-      height: 50px;
-    }
+    gap: 1rem;
   }
 
-  .linksCaja {
+  .noticia-img,
+  .noticia-texto {
     width: 100%;
+  }
+
+  .noticia h2 {
+    font-size: 1.2rem;
+  }
+
+  .noticia p {
+    font-size: 0.9rem;
+  }
+
+  /* ===== INDEX ===== */
+  .intro,
+  .imagenes {
     flex-direction: column;
-    height: auto;
-    align-items: center;
   }
 
-  .MainGridIndex {
-  grid-template-areas:
-    "img1"
-    "titulo"
-    "img2"
-    "subtitulo"
-    "img3"
-    "p1";
-
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  }
-
-  .fotoGrid1,
-  .fotoGrid2,
-  .fotoGrid3 {
-    width: 70%;
-    max-width: 200px;
-    height: auto;
-  }
-
-  
-.video-convenio {
+  .intro img,
+  .intro-texto,
+  .imagenes img {
     width: 100%;
-    height: auto;
   }
 
-.noticia {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-footer {
+  /* ===== CONVENIOS ===== */
+  .convenio {
     flex-direction: column;
-  img {
-      width: 4em;
-      height: 4em;
-    }
+  }
+
+  .convenio-texto,
+  .convenio-video {
+    width: 100%;
+  }
+
+  /* ===== CREDENCIAL ===== */
+  .credencial {
+    flex-direction: column;
+  }
+
+  .credencial-info,
+  .credencial-formulario {
+    width: 100%;
+  }
+
+  /* ===== DONDE ===== */
+  .ubicacion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== GENERAL ===== */
+  .main-container {
+    padding: 1rem;
+  }
+
+  /*CREDENCIALES*/
+  .credenciales-track {
+    flex-direction: column;
+  }
+
+  .credenciales-track img {
+    width: 100%;
   }
 
 }
 
-@media (min-width: 481px) and (max-width: $tablet) {
 
-/* no hay muchos cambios para hacer ya que el diseño es bastante flexible, pero se pueden ajustar algunos tamaños */
+/* ================= TABLET ================= */
+/* 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
 
-  header img {
-    width: 55px;
-    height: 55px;
+  /* ===== NOTICIAS ===== */
+  .noticia {
+    gap: 1.5rem;
   }
 
-  
-  .MainGridIndex {
-    grid-template-areas:
-      "img1 titulo"
-      "img2 subtitulo"
-      "img3 p1";
-
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+  .noticia h2 {
+    font-size: 1.4rem;
   }
+
+  .noticia p {
+    font-size: 1rem;
+  }
+
+  /* ===== GENERAL ===== */
+  .main-container {
+    padding: 1.5rem;
+  }
+
 
 }
-

@@ -1,136 +1,130 @@
-<!DOCTYPE html>     
-<html lang="es">        
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convenios - Juzgado de Familia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convenios - Juzgado de Familia</title>
 
-    <!-- Meta Etiquetas -->
-    <meta name="description" content="Sección de convenios institucionales de referencia del Juzgado de Familia de Lanús. Contenido utilizado con fines educativos para demostrar la estructura de un sitio web institucional.">
-    <meta name="keywords" content="convenios, juzgado, familia">
+  <meta name="description" content="Sección de convenios institucionales de referencia del Juzgado de Familia de Lanús.">
+  <meta name="keywords" content="convenios, juzgado, familia">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+  <!-- Bootstrap SOLO navbar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <!-- fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Animate.css -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- CSS propio (SIEMPRE ÚLTIMO) -->
-    <link rel="stylesheet" href="../css/styles.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>  
+<body>
 
-    <header>
-        <h1 class="animate__animated animate__backInLeft inline-element">Convenios</h1>
-        <img class="inline-element" src="../img/logo-juz.jpeg" alt="Logo del Juzgado de Familia Lanús">
+    <div class="wrapper">
+        <header>
 
-        <nav class="navbar navbar-expand-lg">
+        <div class="header-top">
+            <img src="../img/logo-juz.jpeg" alt="Logo del juzgado">
+            <h1>Convenios</h1>
+        </div>
+
+        <!-- NAVBAR IGUAL EN TODAS -->
+        <nav class="navbar navbar-expand-lg navbar-custom container-fluid">
             <div class="container-fluid">
-                <a class="navbar-brand clase-propia" href="../index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./credencial.html">Credencial Online</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./donde.html">Dónde estamos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./noticias.html">Noticias</a>
-                        </li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./credencial.html">Credencial</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./donde.html">Dónde estamos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Noticias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./convenios.html">Convenios</a>
+                </li>
+
+                </ul>
+            </div>
+
             </div>
         </nav>
-    </header>
 
-    <main>
-        <section>
+        </header>
+
+        <main class="main-container">
+
+        <!-- PRIMER BLOQUE -->
+        <section class="convenio">
+
+            <div class="convenio-texto">
             <h2>Convenio con el Municipio</h2>
-            
             <h3>Articulación para la protección integral de las familias</h3>
 
             <p>
-            El Juzgado de Familia suscribió un convenio de cooperación
-            con el Municipio inventado con el objetivo de fortalecer la articulación
-            interinstitucional en casos vinculados a niñez, adolescencia y violencia familiar.
+                El Juzgado de Familia suscribió un convenio de cooperación con el Municipio inventado con el objetivo de fortalecer la articulación interinstitucional en casos vinculados a niñez, adolescencia y violencia familiar.
             </p>
 
             <p>
-            El acuerdo establece mecanismos de trabajo conjunto entre el Poder Judicial
-            y las áreas municipales de desarrollo social, permitiendo una respuesta más
-            rápida y coordinada ante situaciones de vulnerabilidad. Asimismo, se prevé
-            la realización de capacitaciones periódicas destinadas a equipos técnicos
-            y profesionales intervinientes.
+                El acuerdo establece mecanismos de trabajo conjunto entre el Poder Judicial y las áreas municipales de desarrollo social, permitiendo una respuesta más rápida y coordinada ante situaciones de vulnerabilidad.
             </p>
-
-            <div class="video-convenio animate__animated animate__backInLeft">
-                <iframe width="100%" height="auto"
-                    src="https://www.youtube.com/embed/8j8lD0BhtLY?si=xlNr9lpB3KF3EpS7"
-                    title="Video institucional del convenio"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
             </div>
+
+            <div class="convenio-video">
+            <iframe src="https://www.youtube.com/embed/8j8lD0BhtLY" allowfullscreen></iframe>
+            </div>
+
         </section>
 
-        <section>
+        <!-- SEGUNDO BLOQUE -->
+        <section class="convenio-simple">
+
             <h2>Convenio con el Colegio de Abogados de Lomas de Zamora</h2>
-            
             <h3>Capacitación y cooperación académica</h3>
 
             <p>
-            En el marco de las políticas de mejora continua del servicio de justicia,
-            el Juzgado celebró un convenio con el Colegio de Abogados del Departamento
-            Judicial Lomas de Zamora orientado a la capacitación en materia de derecho
-            de familia y procedimientos judiciales.
+            El Juzgado celebró un convenio orientado a la capacitación en derecho de familia y procedimientos judiciales.
             </p>
 
             <p>
-            El acuerdo contempla la organización de jornadas académicas, espacios de
-            actualización normativa y actividades de formación destinadas a profesionales
-            matriculados, promoviendo el fortalecimiento del ejercicio responsable y
-            especializado del derecho en el ámbito familiar.
+            Incluye jornadas académicas, actualización normativa y formación profesional.
             </p>
+
         </section>
-    </main>
 
-    <footer>
+        </main>
+
+        <footer>
         <div class="footer-caja">
-            <img src="../img/siluetafam.webp" alt="Silueta genérica de la familia">
+            <img src="../img/siluetafam.webp" alt="Imagen representativa con una silueta de familia">
+
             <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
+
             <p>
-            Dirección: Av. invento 3800, Lanús, Provincia de Buenos Aires.<br>
-            Teléfono: (011) 4241-0000<br>
-            Correo electrónico: juzfam@jusbuenosaires.gob.ar<br>
-            Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
+            Dirección: Av. Invento 3800, Lanús<br>
+            Tel: (011) 4241-0000<br>
+            Email: juzfam@jusbuenosaires.gob.ar<br>
+            Horario: Lunes a Viernes de 8 a 14 hs
             </p>
         </div>
-    </footer>
+        </footer>
 
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous">
-    </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>

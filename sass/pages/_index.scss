@@ -1,5 +1,4 @@
 
-/* ================= MAIN ================= */
 
 @use "../partials/variables" as *;
 
@@ -7,10 +6,16 @@ main {
   flex-grow: 1;
   background-color: $color-fondo;
   color: $color-texto;
-  text-align: center;
+  
 
   section {
     padding-bottom: 2%;
+  }
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   }
 }
 
@@ -19,91 +24,176 @@ main {
   background-size: cover;
   background-position: center;
 }
-/* ================= GRID ================= */
 
-.MainGridIndex {
-  display: grid;
-
-  grid-template-areas:
-    "img1 titulo"
-    "img2 subtitulo"
-    "img3 p1";
-
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
-
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-
-  gap: 20px;
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
 }
 
-.fotoGrid1,
-.fotoGrid2,
-.fotoGrid3 {
-  width: 200px;
-  height: 200px;
 
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.intro img {
+  width: 50%;
+}
+
+.intro-texto {
+  width: 50%;
+  text-align: center;
+}
+
+.imagenes {
+  display: flex;
+  gap: 2rem;
+}
+
+.imagenes img {
+  width: 50%;
+}
+
+
+/* BLOQUE PRINCIPAL */
+.convenio {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.convenio-texto {
+  width: 60%;
+}
+
+.convenio-video {
+  width: 40%;
+}
+
+.convenio-video iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+/* SEGUNDO BLOQUE */
+.convenio-simple {
+  max-width: 800px;
+}
+
+
+/* LAYOUT PRINCIPAL */
+.credencial {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* TEXTO */
+.credencial-info {
+  width: 50%;
+}
+
+/* FORM */
+.credencial-formulario {
+  width: 50%;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.campo input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* BOTÓN */
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background-color: #5F7486;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* GRID PRINCIPAL */
+.ubicacion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* MAPA */
+.ubicacion-mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* TEXTO */
+.ubicacion-texto {
+  margin: 2rem 0;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.noticias {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ===== BLOQUE NOTICIA ===== */
+.noticia {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* imagen */
+.noticia-img {
+  width: 50%;
+}
+
+.noticia-img img {
+  width: 100%;
+  display: block;
+}
+
+/* texto */
+.noticia-texto {
+  width: 50%;
+}
+
+/* GALERIA DE CREDENCIALES GENERICAS */
+
+.credenciales-galeria {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.credenciales-track {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.credenciales-track img {
+  width: 70%;
+  height: auto;
   object-fit: cover;
-  object-position: center;
-
-  border-radius: 10px;
 }
-
-.titGrid { grid-area: titulo; width: 100%; }
-.subGrid { grid-area: subtitulo; width: 100%; }
-.p1Grid { grid-area: p1; width: 90%; }
-/* ================= GRID DONDE ================= */
-
-.GridDonde {
-  display: grid;
-
-  grid-template-areas:
-    "seccion preguntas"
-    "iframe iframe"
-    "parrafoDndGrid parrafoDndGrid";
-
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-
-  justify-content: center;
-  justify-items: center;
-
-  gap: 5px;
-}
-
-.seccionGrid { grid-area: seccion; width: 100%; height: auto; }
-
-.parrafoDndGrid { grid-area: parrafoDndGrid; width: 100%; height: auto; }
-
-.preguntasGrid { grid-area: preguntas; width: 100%; height: auto; }
-
-.iframeGrid { grid-area: iframe; width: 100%; height: auto; }
-
-/* ================= GRID CREDENCIALES ================= */
-
-.GridCredenciales {
-  display: grid;
-
-  grid-template-areas:
-    "foto seccion"
-    "foto2 seccion2";
-
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-
-  gap: 20px;
-}
-
-
-.fotoCred1 { grid-area: foto; width: 90%; height: auto; padding:20px; }
-.fotoCred2 { grid-area: foto2; width: 90%; height: auto;padding:20px; }
-.seccionCred1 { grid-area: seccion; width: 100%; height: auto; }
-.seccionCred2 { grid-area: seccion2; width: 100%; height: auto; }

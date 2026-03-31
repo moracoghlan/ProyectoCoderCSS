@@ -3,119 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias - Juzgado de Familia </title>  
+    <title>Noticias - Juzgado de Familia</title>  
 
-       <!-- Meta Etiquetas -->
-    <meta name="description" content="Noticias y novedades de ejemplo del Juzgado de Familia de Lanús. Contenidos de demostración creados para un proyecto educativo de desarrollo web.">
+    <!-- Meta Etiquetas -->
+    <meta name="description" content="Noticias y novedades de ejemplo del Juzgado de Familia de Lanús.">
     <meta name="keywords" content="noticias, juzgado, familia">
 
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+    <!-- Bootstrap SOLO para navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Animate.css -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <!-- CSS propio (SIEMPRE último) -->
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>  
+    <div class="wrapper">
+        <header class="header">
 
-<header>
-    <h1 class="animate__animated animate__backInLeft inline-element">Noticias</h1>
-    <img class="inline-element" src="../img/logo-juz.jpeg" alt="Logo del juzgado">
-     
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand clase-propia" href="../index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./credencial.html">Credencial Online</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./convenios.html">Convenios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./donde.html">Dónde Estamos</a>
-                    </li>
-                </ul>
+            <div class="header-top">
+                <img src="../img/logo-juz.jpeg" alt="Logo del juzgado">
+                <h1 class="animate__animated animate__backInLeft">Noticias</h1>
             </div>
-        </div>
-    </nav>
-</header>
 
-<main>
+            <nav class="navbar navbar-expand-lg navbar-custom container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
 
-    <section>
-        <h2>Jornada de Capacitación en Violencia Familiar</h2>
-        <img class="noticia" src="../img/acuerdo.jpg" alt="Hombre y mujer firmando un acuerdo y estrechando la mano">
-        <h3>Fortalecimiento de herramientas de intervención</h3>
-        <p>
-        El Juzgado de Familia participó de una jornada de capacitación
-        destinada a magistrados, funcionarios y equipos técnicos interdisciplinarios,
-        centrada en la actualización de protocolos de actuación en casos de violencia
-        familiar y de género. La actividad tuvo como objetivo optimizar los mecanismos
-        de protección urgente y mejorar la articulación con organismos municipales y
-        provinciales, reforzando el compromiso institucional con la tutela efectiva
-        de derechos.
-        </p>
-    </section>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <section>
-        <h2>Implementación de Turnos Digitales</h2>
-        <img class="noticia" src="../img/turnos.webp" alt="dos personas hablando formalmente en una biblioteca sobre un archivo">
-        <h3>Modernización del servicio de justicia</h3>
-        <p>
-        Con el propósito de agilizar la atención al público y reducir los tiempos
-        de espera, el Juzgado de Familia ha implementado un sistema de
-        solicitud de turnos en modalidad digital. Esta herramienta permitirá a los
-        usuarios gestionar citas para presentaciones y consultas administrativas
-        de manera más organizada y eficiente. La medida se enmarca dentro del plan
-        de modernización y mejora continua del servicio de justicia.
-        </p>
-    </section>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
 
-</main>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/credencial.html">Credencial</a>
+                            </li>
 
-<footer>
-    <div class="footer-caja">
-        <img src="../img/siluetafam.webp" alt="Silueta genérica de la familia">
-        <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
-        <p>
-        Dirección: Av. Hipólito Yrigoyen 3800, Lanús, Provincia de Buenos Aires.<br>
-        Teléfono: (011) 4241-0000<br>
-        Correo electrónico: juzfam@jusbuenosaires.gob.ar<br>
-        Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
-        </p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/donde.html">Dónde estamos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/convenios.html">Convenios</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="noticias">
+
+            <!-- NOTICIA 1 -->
+            <section class="noticia">
+                <div class="noticia-img">
+                    <img src="../img/acuerdo.jpg" alt="Una chica sonrie y estrecha su mano con un hombre. Ambos estan sentados en una mesa y tienen papeles frente a ellos.">
+                </div>
+
+                <div class="noticia-texto">
+                    <h2>Jornada de Capacitación en Violencia Familiar</h2>
+                    <h3>Fortalecimiento de herramientas de intervención</h3>
+
+                    <p>
+                        El Juzgado de Familia participó de una jornada de capacitación destinada a magistrados, funcionarios y equipos técnicos interdisciplinarios, centrada en la actualización de protocolos de actuación en casos de violencia familiar y de género.
+                    </p>
+                </div>
+            </section>
+
+            <!-- NOTICIA 2 -->
+            <section class="noticia">
+                <div class="noticia-img">
+                    <img src="../img/turnos.webp" alt="Una mujer leyendo un documento junto a un hombre en frente escuchandola. Estan en una biblioteca">
+                </div>
+
+                <div class="noticia-texto">
+                    <h2>Implementación de Turnos Digitales</h2>
+                    <h3>Modernización del servicio de justicia</h3>
+
+                    <p>
+                        Con el propósito de agilizar la atención al público y reducir los tiempos de espera, se implementó un sistema de turnos digitales que permite organizar mejor la atención.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-caja">
+                <img src="../img/siluetafam.webp" alt="Imagen representativa con una silueta de familia">
+                <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
+                <p>
+                    Dirección: Av. Hipólito Yrigoyen 3800, Lanús.<br>
+                    Teléfono: (011) 4241-0000<br>
+                    Correo: juzfam@jusbuenosaires.gob.ar
+                </p>
+            </div>
+        </footer>
+
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </div>
-</footer>
-
-<!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
-</script>
-
 </body>
 </html>

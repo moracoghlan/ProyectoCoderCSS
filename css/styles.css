@@ -7,51 +7,76 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body {
   font-family: "Merriweather", serif;
   background-color: #F9F9F7;
+  overflow-x: hidden;
 }
 
-a:hover {
-  opacity: 0.8;
-  transition: 0.3s;
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ================= HEADER ================= */
 header {
+  background-color: #5F7486;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-size: 0.7rem;
-  background-color: #5F7486;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  gap: 0.5rem;
+}
+header h1 {
+  font-size: 3rem;
 }
 header img {
   width: 60px;
   height: 60px;
 }
-
-.clase-propia a {
+header .navbar {
+  width: 100%;
+}
+header .navbar-custom {
   background-color: #5F7486;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+header .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+header .navbar-nav .nav-link:hover {
+  color: white;
 }
 
-.linksCaja {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 40em;
-  padding-top: 3%;
-  padding-bottom: 3%;
+/* ================= MOBILE ================= */
+/* hasta 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  header img {
+    width: 40px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
 }
-
+/* ================= TABLET ================= */
+/* 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /* ================= FOOTER ================= */
 footer {
   background-color: #5F7486;
@@ -71,16 +96,42 @@ footer img {
   width: 5em;
   height: 5em;
 }
+footer {
+  /* ================= MOBILE ================= */
+  /* hasta 768px */
+}
+@media (max-width: 768px) {
+  footer .footer-caja {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer footer {
+    font-size: 0.7rem;
+  }
+}
+footer {
+  /* ================= TABLET ================= */
+  /* 769px a 1024px */
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-caja {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 
-/* ================= MAIN ================= */
 main {
   flex-grow: 1;
   background-color: #F9F9F7;
   color: rgb(1, 1, 71);
-  text-align: center;
 }
 main section {
   padding-bottom: 2%;
+}
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .mainIND {
@@ -89,174 +140,250 @@ main section {
   background-position: center;
 }
 
-/* ================= GRID ================= */
-.MainGridIndex {
-  display: grid;
-  grid-template-areas: "img1 titulo" "img2 subtitulo" "img3 p1";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
 }
 
-.fotoGrid1,
-.fotoGrid2,
-.fotoGrid3 {
-  width: 200px;
-  height: 200px;
+.intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.intro img {
+  width: 50%;
+}
+
+.intro-texto {
+  width: 50%;
+  text-align: center;
+}
+
+.imagenes {
+  display: flex;
+  gap: 2rem;
+}
+
+.imagenes img {
+  width: 50%;
+}
+
+/* BLOQUE PRINCIPAL */
+.convenio {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.convenio-texto {
+  width: 60%;
+}
+
+.convenio-video {
+  width: 40%;
+}
+
+.convenio-video iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+/* SEGUNDO BLOQUE */
+.convenio-simple {
+  max-width: 800px;
+}
+
+/* LAYOUT PRINCIPAL */
+.credencial {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* TEXTO */
+.credencial-info {
+  width: 50%;
+}
+
+/* FORM */
+.credencial-formulario {
+  width: 50%;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.campo input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* BOTÓN */
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background-color: #5F7486;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* GRID PRINCIPAL */
+.ubicacion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* MAPA */
+.ubicacion-mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* TEXTO */
+.ubicacion-texto {
+  margin: 2rem 0;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.noticias {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ===== BLOQUE NOTICIA ===== */
+.noticia {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* imagen */
+.noticia-img {
+  width: 50%;
+}
+
+.noticia-img img {
+  width: 100%;
+  display: block;
+}
+
+/* texto */
+.noticia-texto {
+  width: 50%;
+}
+
+/* GALERIA DE CREDENCIALES GENERICAS */
+.credenciales-galeria {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.credenciales-track {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.credenciales-track img {
+  width: 70%;
+  height: auto;
   object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
 }
 
-.titGrid {
-  grid-area: titulo;
-  width: 100%;
-}
-
-.subGrid {
-  grid-area: subtitulo;
-  width: 100%;
-}
-
-.p1Grid {
-  grid-area: p1;
-  width: 90%;
-}
-
-/* ================= GRID DONDE ================= */
-.GridDonde {
-  display: grid;
-  grid-template-areas: "seccion preguntas" "iframe iframe" "parrafoDndGrid parrafoDndGrid";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  justify-content: center;
-  justify-items: center;
-  gap: 5px;
-}
-
-.seccionGrid {
-  grid-area: seccion;
-  width: 100%;
-  height: auto;
-}
-
-.parrafoDndGrid {
-  grid-area: parrafoDndGrid;
-  width: 100%;
-  height: auto;
-}
-
-.preguntasGrid {
-  grid-area: preguntas;
-  width: 100%;
-  height: auto;
-}
-
-.iframeGrid {
-  grid-area: iframe;
-  width: 100%;
-  height: auto;
-}
-
-/* ================= GRID CREDENCIALES ================= */
-.GridCredenciales {
-  display: grid;
-  grid-template-areas: "foto seccion" "foto2 seccion2";
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
-.fotoCred1 {
-  grid-area: foto;
-  width: 90%;
-  height: auto;
-  padding: 20px;
-}
-
-.fotoCred2 {
-  grid-area: foto2;
-  width: 90%;
-  height: auto;
-  padding: 20px;
-}
-
-.seccionCred1 {
-  grid-area: seccion;
-  width: 100%;
-  height: auto;
-}
-
-.seccionCred2 {
-  grid-area: seccion2;
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  header {
-    flex-direction: column;
-  }
-  header h1 {
-    margin-top: 10px;
-  }
-  header img {
-    width: 50px;
-    height: 50px;
-  }
-  .linksCaja {
-    width: 100%;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-  }
-  .MainGridIndex {
-    grid-template-areas: "img1" "titulo" "img2" "subtitulo" "img3" "p1";
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-  }
-  .fotoGrid1,
-  .fotoGrid2,
-  .fotoGrid3 {
-    width: 70%;
-    max-width: 200px;
-    height: auto;
-  }
-  .video-convenio {
-    width: 100%;
-    height: auto;
-  }
+/* ================= MOBILE ================= */
+/* hasta 768px */
+@media (max-width: 768px) {
+  /* ===== NOTICIAS ===== */
   .noticia {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 1rem;
   }
-  footer {
+  .noticia-img,
+  .noticia-texto {
+    width: 100%;
+  }
+  .noticia h2 {
+    font-size: 1.2rem;
+  }
+  .noticia p {
+    font-size: 0.9rem;
+  }
+  /* ===== INDEX ===== */
+  .intro,
+  .imagenes {
     flex-direction: column;
   }
-  footer img {
-    width: 4em;
-    height: 4em;
+  .intro img,
+  .intro-texto,
+  .imagenes img {
+    width: 100%;
+  }
+  /* ===== CONVENIOS ===== */
+  .convenio {
+    flex-direction: column;
+  }
+  .convenio-texto,
+  .convenio-video {
+    width: 100%;
+  }
+  /* ===== CREDENCIAL ===== */
+  .credencial {
+    flex-direction: column;
+  }
+  .credencial-info,
+  .credencial-formulario {
+    width: 100%;
+  }
+  /* ===== DONDE ===== */
+  .ubicacion-grid {
+    grid-template-columns: 1fr;
+  }
+  /* ===== GENERAL ===== */
+  .main-container {
+    padding: 1rem;
+  }
+  /*CREDENCIALES*/
+  .credenciales-track {
+    flex-direction: column;
+  }
+  .credenciales-track img {
+    width: 100%;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  /* no hay muchos cambios para hacer ya que el diseño es bastante flexible, pero se pueden ajustar algunos tamaños */
-  header img {
-    width: 55px;
-    height: 55px;
+/* ================= TABLET ================= */
+/* 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ===== NOTICIAS ===== */
+  .noticia {
+    gap: 1.5rem;
   }
-  .MainGridIndex {
-    grid-template-areas: "img1 titulo" "img2 subtitulo" "img3 p1";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+  .noticia h2 {
+    font-size: 1.4rem;
+  }
+  .noticia p {
+    font-size: 1rem;
+  }
+  /* ===== GENERAL ===== */
+  .main-container {
+    padding: 1.5rem;
   }
 }
 

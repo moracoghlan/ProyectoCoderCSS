@@ -1,191 +1,171 @@
-<!DOCTYPE html> 
-<html lang="es">    
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dónde estamos - Juzgado de Familia </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dónde estamos - Juzgado de Familia</title>
 
-       <!-- Meta Etiquetas -->
-    <meta name="description" content="Ubicación de referencia del Juzgado de Familia de Lanús. Información orientativa sobre cómo llegar y datos institucionales utilizados con fines educativos en este proyecto web.">
-    <meta name="keywords" content="dónde estamos, juzgado, familia">
+  <meta name="description" content="Ubicación del juzgado.">
+  <meta name="keywords" content="ubicación, juzgado">
 
+  <!-- Bootstrap SOLO navbar + accordion -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+  <!-- fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900&display=swap" rel="stylesheet">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- CSS propio (SIEMPRE último) -->
-    <link rel="stylesheet" href="../css/styles.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+    <div class="wrapper">    
+        <header>
 
-<header>
-    <h1 class="animate__animated animate__backInLeft inline-element">Dónde Estamos</h1>
-    <img class="inline-element" src="../img/logo-juz.jpeg" alt="Logo del Juzgado">
+        <div class="header-top">
+            <img src="../img/logo-juz.jpeg" alt="Logo">
+            <h1>Dónde estamos</h1>
+        </div>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand clase-propia" href="../index.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" aria-controls="navbarNav" 
-                aria-expanded="false" aria-label="Toggle navigation">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-custom container-fluid">
+            <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./credencial.html">Credencial Online</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./convenios.html">Convenios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./noticias.html">Noticias</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./credencial.html">Credencial</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./donde.html">Dónde estamos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Noticias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./convenios.html">Convenios</a>
+                </li>
+
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
 
-<main class="GridDonde"> 
+            </div>
+        </nav>
 
-    <section class="seccionGrid">
-        <h2>Nuestra Ubicación</h2>
-        <p>Estamos ubicados en Av. invento 3800, Lanús, Provincia de Buenos Aires, Argentina.</p>
+        </header>
 
-        <h3>Horario de Atención</h3>
-        <p>Atendemos de lunes a viernes de 8:00 a 14:00 horas.</p>
+        <main class="main-container">
 
-        <h3>Contacto</h3>
-        <p>Teléfono: (011) 4241-0000</p>
-        <p>Email: juzfam@jusbuenosaires.gob.ar</p>
-    </section>
+        <!-- GRID PRINCIPAL -->
+        <section class="ubicacion-grid">
 
-    <iframe class="iframeGrid animate__animated animate__backInRight"
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26243.17348611987!2d-58.41209451607779!3d-34.69517329292776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccdea2ea0ff1%3A0x5416fca0bfac20c0!2sJuzgado%20De%20Familia%20Lan%C3%BAs!5e0!3m2!1ses-419!2sar!4v1765815491640!5m2!1ses-419!2sar" 
-         height="450" 
-         style="border:0;" 
-         allowfullscreen="" 
-         loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+            <!-- TEXTO -->
+            <div class="ubicacion-info">
+            <h2>Nuestra Ubicación</h2>
 
-        <p class="parrafoDndGrid">
-        El Juzgado de Familia se encuentra en una ubicación accesible, cercana a
-        diversas líneas de transporte público y a los principales accesos del partido.
-        Se recomienda a los concurrentes presentarse con la documentación necesaria
-        y con antelación suficiente al horario asignado. Para consultas generales,
-        puede comunicarse telefónicamente dentro del horario administrativo.
-        </p>
-    
+            <p>Estamos ubicados en Av. Invento 3800, Lanús.</p>
 
-    <section class="accordion container preguntasGrid" id="accordionExample">
+            <h3>Horario</h3>
+            <p>Lunes a viernes de 8 a 14 hs</p>
 
-        <!-- Item 1 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#collapseOne" 
-                    aria-expanded="true" 
-                    aria-controls="collapseOne">
+            <h3>Contacto</h3>
+            <p>Tel: (011) 4241-0000</p>
+            <p>Email: juzfam@jusbuenosaires.gob.ar</p>
+            </div>
+
+            <!-- MAPA -->
+            <div class="ubicacion-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                loading="lazy">
+            </iframe>
+            </div>
+
+        </section>
+
+        <!-- TEXTO EXTRA -->
+        <section class="ubicacion-texto">
+            <p>
+            El Juzgado de Familia se encuentra en una ubicación accesible, cercana a diversas líneas de transporte público. Se recomienda presentarse con antelación.
+            </p>
+        </section>
+
+        <!-- ACORDEÓN (Bootstrap permitido) -->
+        <section class="faq">
+
+            <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#uno">
                     ¿Cómo llegar?
                 </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" 
-                aria-labelledby="headingOne" 
-                data-bs-parent="#accordionExample">
+                </h2>
+                <div id="uno" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                    <strong>Accesos y transporte.</strong> El edificio se encuentra a pocas cuadras
-                    de la estación imaginaria y cuenta con acceso mediante múltiples líneas de colectivo.
-                    Asimismo, dispone de ingreso apto para personas con movilidad reducida.
-                    Para mayor precisión, puede consultar el mapa interactivo incluido en esta página.
+                    Acceso mediante transporte público y múltiples líneas.
+                </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Item 2 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#collapseTwo" 
-                    aria-expanded="false" 
-                    aria-controls="collapseTwo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dos">
                     Preguntas frecuentes
                 </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" 
-                aria-labelledby="headingTwo" 
-                data-bs-parent="#accordionExample">
+                </h2>
+                <div id="dos" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    <strong>Consultas habituales.</strong> Las presentaciones judiciales deben
-                    realizarse conforme a los turnos previamente asignados. Las consultas generales
-                    pueden efectuarse telefónicamente o por correo electrónico institucional.
-                    No se brinda asesoramiento jurídico particular desde esta sede.
+                    Consultas por teléfono o mail.
+                </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Item 3 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#collapseThree" 
-                    aria-expanded="false" 
-                    aria-controls="collapseThree">
-                    Requisitos para la atención
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tres">
+                    Requisitos
                 </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" 
-                aria-labelledby="headingThree" 
-                data-bs-parent="#accordionExample">
+                </h2>
+                <div id="tres" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    Dirección: Av. Hipólito Yrigoyen 3800, Lanús, Provincia de Buenos Aires.<br>
-                    Teléfono: (011) 4241-0000<br>
-                    Correo electrónico: juzfamlanus@jusbuenosaires.gob.ar<br>
-                    Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
+                    Presentarse con documentación.
+                </div>
                 </div>
             </div>
+
+            </div>
+
+        </section>
+
+        </main>
+
+        <footer>
+        <div class="footer-caja">
+            <img src="../img/siluetafam.webp" alt="Imagen representativa con una silueta de familia">
+
+            <p>2025 Juzgado de Familia</p>
+
+            <p>
+            Dirección: Av. Invento<br>
+            Tel: (011) 4241-0000
+            </p>
         </div>
+        </footer>
 
-    </section>
-
-</main>
-
-<footer>
-    <div class="footer-caja">
-        <img src="../img/siluetafam.webp" alt="Silueta genérica de la familia">
-        <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
-        <p>
-        Dirección: Av. Invento, Lanús, Provincia de Buenos Aires.<br>
-        Teléfono: (011) 4241-0000<br>
-        Correo electrónico: juzfam@jusbuenosaires.gob.ar<br>
-        Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
-        </p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </div>
-</footer>
-
-<!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
-</script>
-
 </body>
 </html>

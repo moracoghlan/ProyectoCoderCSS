@@ -1,96 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juzgado de Familia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juzgado de Familia</title>
 
-    <!-- metaetiquetas -->
-    <meta name="description" content="Sitio institucional de práctica inspirado en el Juzgado de Familia de Lanús. Información general, noticias, convenios y contenidos educativos desarrollados para un proyecto de desarrollo web.">
-    <meta name="keywords" content="juzgado de familia, lanús, noticias, convenios, credenciales, práctica web, proyecto académico">
+  <!-- metaetiquetas -->
+  <meta name="description" content="Sitio institucional de práctica inspirado en el Juzgado de Familia de Lanús.">
+  <meta name="keywords" content="juzgado, familia, noticias, convenios">
 
-      <!-- link bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    
-    <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css">
+  <!-- bootstrap (SOLO para navbar) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
+  <div class="wrapper">
     <header>
 
-        
-        
-        <img src="./img/logo-juz.jpeg" alt="Logo del Juzgado de Familia">
-        <h1 class="animate__animated animate__backInLeft">Juzgado de familia</h1>
-       
-         <nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">Juzgado de Familia</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./pages/credencial.html">Credencial Online</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/donde.html">Donde estamos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/noticias.html">Noticias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/convenios.html">Convenios</a>
-        </li>
-    
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="header-top">
+        <img src="./img/logo-juz.jpeg" alt="Logo del juzgado">
+        <h1 class="animate__animated animate__backInLeft">Juzgado de Familia</h1>
+      </div>
+
+      <!-- NAVBAR (único bootstrap permitido) -->
+      <nav class="navbar navbar-expand-lg navbar-custom container-fluid">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/credencial.html">Credencial</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/donde.html">Dónde estamos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/convenios.html">Convenios</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
     </header>
-        
-    
-        
-   <main class="MainGridIndex mainIND">
-            <img class="fotoGrid1 animate__animated animate__backInLeft" src="./img/flia.jpeg" alt="representación de familia, hombre, mujer y dos niños">
-            <img class="fotoGrid2 animate__animated animate__backInRight" src="./img/foto.webp" alt="representación de un juzgado, personas en reunión">
-            <img class="fotoGrid3 animate__animated animate__backInLeft" src="./img/turnos.webp" alt="dos personas hablando formalmente en una biblioteca sobre un archivo">
-            <h2 class="titGrid">Bienvenidos al Juzgado de Familia</h2>
-            <h3 class="subGrid">Aviso Importante</h3>
-            <p class="p1Grid">Este sitio web ha sido desarrollado exclusivamente con fines educativos como parte de un proyecto académico realizado en el marco del curso de desarrollo web de Coderhouse. El mismo utiliza como referencia el nombre del "Juzgado de Familia" únicamente a modo ilustrativo para la práctica de diseño, maquetación y programación de páginas web.
 
-En consecuencia, el presente sitio no corresponde a una página institucional real, ni se encuentra vinculado de ninguna manera con el Poder Judicial ni con ningun Juzgado de Familia ubicado en Lanús o en Buenos Aires. Toda la información publicada aquí carece de validez oficial y no debe ser considerada como fuente de información jurídica, institucional o administrativa.
+    <!-- MAIN SIN BOOTSTRAP -->
+    <main class="main-container">
 
-Asimismo, los nombres, textos, descripciones, credenciales, noticias, convenios y demás contenidos incluidos en el sitio han sido generados exclusivamente con fines demostrativos y de práctica, en muchos casos mediante herramientas de inteligencia artificial. Por lo tanto, cualquier similitud con personas, instituciones o situaciones reales es meramente casual y no intencional.</p>
-        
+      <!-- INTRO -->
+      <section class="intro">
 
-        
-    </main>
-    <footer>
-        
-        <div class="footer-caja">
-        <img src="./img/siluetafam.webp" alt="Silueta genérica de la familia">
-        <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
-        <p>
-        Dirección: Av. Invento, Lanús, Provincia de Buenos Aires. <br>
-        Teléfono: (011) 4241-0000 <br>
-        Correo electrónico: juzfam@jusbuenosaires.gob.ar <br>
-        Horario de atención: Lunes a Viernes de 8:00 a 14:00 hs.
-        </p>
+        <div class="intro-texto">
+          <h2>Bienvenidos al Juzgado de Familia</h2>
+          <h3>Aviso importante</h3>
+
+          <p>
+            Este sitio web ha sido desarrollado exclusivamente con fines educativos como parte de un proyecto académico realizado en el marco del curso de desarrollo web.
+          </p>
+
+          <p>
+            No corresponde a una página institucional real ni tiene validez oficial. Toda la información es ficticia y utilizada únicamente con fines de práctica.
+          </p>
+
+          <p>
+            Los contenidos han sido generados con fines demostrativos, por lo que cualquier similitud con la realidad es casual.
+          </p>
         </div>
 
-    </footer> 
-    <!-- js de bs -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <img src="./img/flia.jpeg" alt="Una familia sonriente compuesta por un padre, una madre y dos hijos pequeños. Están divirtiendose, los padres juntando sus manos y sonriendo.">
 
+      </section>
+
+      <!-- IMÁGENES -->
+      <section class="imagenes">
+        <img src="./img/foto.webp" alt="Gente reunida en una sala de audiencias">
+        <img src="./img/turnos.webp" alt="Una mujer leyendo un documento junto a un hombre en frente escuchandola. Estan en una biblioteca">
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-caja">
+
+        <img src="./img/siluetafam.webp" alt="Imagen representativa con una silueta de familia">
+
+        <p>2025 Juzgado de Familia. Todos los derechos reservados.</p>
+
+        <p>
+          Dirección: Av. Invento, Lanús<br>
+          Tel: (011) 4241-0000<br>
+          Email: juzfam@jusbuenosaires.gob.ar<br>
+          Horario: Lunes a Viernes de 8 a 14 hs
+        </p>
+
+      </div>
+    </footer>
+
+    <!-- JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
 </body>
 </html>
